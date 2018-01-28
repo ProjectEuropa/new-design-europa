@@ -1,0 +1,230 @@
+<html>
+
+<head>
+    <title>Project Europa</title>
+    <meta charset="UTF-8">
+
+    <link href="https://project-europa.herokuapp.com/css/bootstrap.min.css" rel="stylesheet" id="themesid">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="top.css">
+    <!-- 固有のcss読み込み-->
+</head>
+
+<body>
+
+    <header>
+        <!-- top nav -->
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- toggle -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- top menu -->
+                <div class="collapse navbar-collapse" id="top-nav">
+                    <!-- main navbar -->
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a class="navbar-brand" href="https://project-europa.herokuapp.com">Top</a>
+                        </li>
+                        <li>
+                            <a class="navbar-brand" href="https://project-europa.herokuapp.com/information">Information</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Search
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="">Team Data</a>
+                                </li>
+                                <li>
+                                    <a href="">Match Data</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Sum DL
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="https://project-europa.herokuapp.com/sumdownload/team">DL Team</a>
+                                </li>
+                                <li>
+                                    <a href="https://project-europa.herokuapp.com/sumdownload/match">DL Match</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="navbar-brand" href="https://project-europa.herokuapp.com/simpleupload">Simple Upload</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Video
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="https://project-europa.herokuapp.com/video/upload">Video Upload</a>
+                                </li>
+                                <li>
+                                    <a href="https://project-europa.herokuapp.com/video/search">Video Search</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="navbar-brand" href="https://project-europa.herokuapp.com/help">Help</a>
+                        </li>
+                        <li>
+                            <a class="navbar-brand" href="https://project-europa.herokuapp.com/links">Links</a>
+                        </li>
+                        <li>
+                            <a class="navbar-brand" href="https://project-europa.herokuapp.com/inquiry">Inquiry</a>
+                        </li>
+                    </ul>
+
+                    <!-- right navbar -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <a class="navbar-brand" href="https://project-europa.herokuapp.com/login">Login</a>
+                        <a class="navbar-brand" href="https://project-europa.herokuapp.com/auth/register">Register</a>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- end container -->
+        </nav>
+    </header>
+
+    <main id="main-image">
+        <article>
+            <div class="container main">
+
+                <h2>Team Data</h2>
+                <p>チームデータの検索が可能です。ダウンロードアイコンをクリックするとダウンロードが始まります。</p>
+
+                <h5>
+                    <form method="get" action="https://project-europa.herokuapp.com/search/team" class="form-inline" role="form">
+                        <div class="form-group">
+                            <label for="word">検索ワード:</label>
+                            <input type="text" name="keyword" class="form-control" value="">
+                            <select class="form-control" name="orderType">
+                                <option value="new">投稿日時の新しい順</option>
+                                <option value="old">投稿日時の古い順</option>
+                            </select>
+                            <button type="submit" class="btn btn-primary">検索</button>
+                        </div>
+                    </form>
+                </h5>
+                <p>全137件中1ページ目</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr class="something">
+                                <th>ダウンロード</th>
+                                <th>オーナー名</th>
+                                <th>コメント</th>
+                                <th>ファイル名</th>
+                                <th>アップロード日時</th>
+                                <th>削除</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-sm-1">
+                                    <a href="https://project-europa.herokuapp.com/search/download/278">
+                                        <span class="glyphicon glyphicon-cloud-download"></span>
+                                    </a>
+                                </td>
+                                <td class="col-sm-1">シュガレ</td>
+                                <td class="col-sm-3">
+                                    ■第5回Europa不定期大会
+                                    <br> チーム名：添火式
+                                    <br> コメント希望欄：○
+                                    <br> コメント：少々遅れました…。　小チップ張りつき飛行混成
+                                    <br>
+                                    <span class="glyphicon glyphicon-search">フリーOKE</span>
+                                </td>
+                                <td class="col-sm-2">SGTSYR1.CHE</td>
+                                <td class="col-md-2">2017-11-26 02:07:52</td>
+                                <td class="col-md-3">
+                                    <form method="post" action="https://project-europa.herokuapp.com/search/team/delete" class="form-horizontal">
+                                        <div class="form-group">
+                                            <div class="col-xs-12 form-inline">
+                                                <input type="text" name="deletePassword" class="form-control" placeholder="削除パスワード">
+                                                <input type="hidden" name="id" class="form-control" value="278">
+                                                <button type="submit" class="btn btn-info btn-delete" value="SGTSYR1.CHE">削除</button>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="_token" value="xJRAPnE46FWrJMNGnFlWGenvoSQYPBkVJ8lLmpYQ">
+                                    </form>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <ul class="pagination">
+                    <li class="disabled">
+                        <span>«</span>
+                    </li>
+                    <li class="active">
+                        <span>1</span>
+                    </li>
+                    <li>
+                        <a href="https://project-europa.herokuapp.com/search/team?page=2">2</a>
+                    </li>
+                    <li>
+                        <a href="https://project-europa.herokuapp.com/search/team?page=3">3</a>
+                    </li>
+                    <li>
+                        <a href="https://project-europa.herokuapp.com/search/team?page=4">4</a>
+                    </li>
+                    <li>
+                        <a href="https://project-europa.herokuapp.com/search/team?page=5">5</a>
+                    </li>
+                    <li>
+                        <a href="https://project-europa.herokuapp.com/search/team?page=6">6</a>
+                    </li>
+                    <li>
+                        <a href="https://project-europa.herokuapp.com/search/team?page=7">7</a>
+                    </li>
+                    <li>
+                        <a href="https://project-europa.herokuapp.com/search/team?page=8">8</a>
+                    </li>
+                    <li class="disabled">
+                        <span>...</span>
+                    </li>
+                    <li>
+                        <a href="https://project-europa.herokuapp.com/search/team?page=13">13</a>
+                    </li>
+                    <li>
+                        <a href="https://project-europa.herokuapp.com/search/team?page=14">14</a>
+                    </li>
+                    <li>
+                        <a href="https://project-europa.herokuapp.com/search/team?page=2" rel="next">»</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <small>© 2016-
+                <span id="nowYear"></span> Team Project Europa</small>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById("nowYear").innerText = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
