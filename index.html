@@ -23,12 +23,52 @@
         .fa-cloud-download {
             color: deepskyblue;
         }
+
         ul.dropdown-menu li:hover {
-            background-color: #3f51b5;
+            background-color: #33BFDB;
+        }
+
+        .table-header {
+            background-color: #33BFDB;
+            color: #ffffff;
+        }
+
+        tr.table-header th {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        input.input-alternate {
+            background-color: #ffffff;
+        }
+
+        .navbar {
+            background-color: #33BFDB;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #33BFDB;
+        }
+
+        tbody {
+            background-color: #ffffff;
+        }
+
+        li.nav-item a {
+            color: #ffffff;
+        }
+        .under-header {
+            font-weight: bold;
+            color: #737373;
+        }
+
+        body {
+            background-color: #F5F5F5;
         }
 
         footer {
-            background-color: #3f51b5;
+            background-color: #33BFDB;
             color: #ffffff;
         }
     </style>
@@ -36,7 +76,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-indigo">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -88,12 +128,12 @@
                     </ul>
                     <ul class="navbar-nav nav-right">
                         <li class="nav-item">
-                            <a class="nav-link">
+                            <a class="nav-link" href="">
                                 Login
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">
+                            <a class="nav-link" href="">
                                 Register
                             </a>
                         </li>
@@ -104,8 +144,10 @@
     </header>
 
     <main class="container">
-        <h2 style="margin-top: 15px;">Team Data</h2>
-        <p>チームデータの検索が可能です。ダウンロードアイコンをクリックするとダウンロードが始まります。</p>
+        <div class="under-header">
+            <h2 style="margin-top: 15px;">Team Data</h2>
+            <p>チームデータの検索が可能です。ダウンロードアイコンをクリックするとダウンロードが始まります。</p>
+        </div>
 
         <form class="form-inline" style="margin-top: -10px;">
             <label for="word">検索ワード:</label>
@@ -121,7 +163,7 @@
             </div>
 
             <div class="md-form form-group">
-                <a class="btn btn-primary" style="margin-top: 20px;">検索</a>
+                <a class="btn btn-info" style="margin-top: 20px;">検索</a>
             </div>
         </form>
 
@@ -129,7 +171,7 @@
         <div class="table-responsive">
             <table class="table table-bordered table-hover">
                 <thead>
-                    <tr class="">
+                    <tr class="table-header">
                         <th>ダウンロード</th>
                         <th>オーナー名</th>
                         <th>コメント</th>
